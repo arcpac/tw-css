@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+  </header>
+  <main>
+    <nav class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+      <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <a href="https://flowbite.com/" class="flex items-center">
+          <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo">
+          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Hello Order</span>
+        </a>
+
+        <div class="flex md:order-2 gap-4">
+          <a class="btn-primary">Sign In</a>
+          <a class="btn-default">Sign Up</a>
+          <a class="btn-primary">Sign out</a>
+        </div>
+
+        <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+          <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="#" class="active" aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#" class="link">About</a>
+            </li>
+            <li>
+              <a href="#" class="link">Products</a>
+            </li>
+            <li>
+              <a href="#" class="link">Services</a>
+            </li>
+            <li>
+              <a href="#" class="link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mx-auto py-20">
+      Content here
+      <!-- <p class="ease-out duration-300" role="alert"><%= get_flash(@conn, :info) %></p>
+      <p class="ease-out duration-300" role="alert"><%= get_flash(@conn, :error) %></p>
+      <%= @inner_content %> -->
+    </div>
+  </main>
+</body>
+
+</html>
