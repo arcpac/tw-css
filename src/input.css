@@ -2,7 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100;1,200&display=swap');
+
 @layer components {
+  .btn{
+    @apply shadow-md py-3 px-6 rounded-md transition duration-300
+  }
+  .btn-purple{
+    @apply bg-bookmark-purple text-white
+  }
+  .btn-white{
+    @apply bg-bookmark-white
+  }
   .btn-default {
     @apply 
     inline-block rounded-lg bg-gray-100 px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20

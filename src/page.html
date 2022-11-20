@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <title>Document</title>
+    <style>
+        .toggle-checkbox:checked {
+            right: 0;
+            border-color: #68d391;
+        }
+
+        .toggle-checkbox:checked+.toggle-label {
+            background-color: #68d391;
+        }
+    </style>
+</head>
+
+<body class="font-Poppins dark:bg-slate-900">
+    <header>
+        <nav class="container flex items-start py-4 mt-4 sm:mt-12 ">
+            <div class="py-1"><img src="../assets/img/logo.svg" alt=""></div>
+            <ul class="hidden sm:flex flex-1 text-bookmark-blue justify-end items-center gap-12 uppercase text-xs dark:text-white">
+                <li class="cursor-pointer">Features</li>
+                <li class="cursor-pointer">Pricing</li>
+                <li class="cursor-pointer">Contact</li>
+                <button type="button" class="bg-bookmark-red text-white rounded-md px-7 py-3">Login</button>
+                <div
+                    class="relative inline-block w-10 mr-2 ml-6 align-middle select-none transition duration-200 ease-in  items-center">
+                    <input type="checkbox" name="toggle" id="toggle"
+                        class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" />
+                    <label for="toggle"
+                        class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+                </div>
+
+            </ul>
+            <div class="flex sm:hidden flex-1 justify-end">
+                <i class="text-2xl fas fa-bars"></i>
+            </div>
+        </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative">
+        <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
+            <!-- Content -->
+            <div class="flex flex-1 flex-col items-center lg:items-start">
+                <h2 class="text-bookmark-blue text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6">Lorem Ipsum
+                    Dolor</h2>
+                <p class="text-bookmark-gray text-lg text-center lg:text-left mb-6">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elier adipisicing elier adipisicing elier adipisicing elier adipisicing elie
+                </p>
+                <div class="flex justify-center flex-wrap gap-6">
+                    <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black">Shop
+                        now</button>
+                    <button type="button"
+                        class="btn btn-white hover:bg-bookmark-purple hover:text-white">Register</button>
+                </div>
+            </div>
+            <!-- Image -->
+            <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
+                <img src="../assets/img/img6.jpg" class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full rounded-lg"
+                    alt="">
+            </div>
+        </div>
+        <div
+            class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/4 top-32 right-0 lg:-bottom-28 lg:-right-0">
+        </div>
+    </section>
+
+    <!-- features -->
+    <section class="bg-bookmark-white py-20 mt-20 lg:mt-60">
+        <!-- heading -->
+        <div class="sm:w-3/4 lg:w-5/12 mx-auto py-2">
+            <h1 class="text-3xl text-bookmark-blue text-center">Features</h1>
+            <p class="text-center text-bookmark-gray mt-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Placeat velit amet fugiat incidunt sed autem. Ab molestiae officia, natus facere quo provident dolorem
+                officiis sequi. Asperiores aliquam voluptas itaque temporibus?</p>
+        </div>
+        <!-- Feature 1 -->
+        <div class="relative mt-20 lg:mt-24">
+            <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+                <!-- Image -->
+                <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+                    <img src="../assets/img/img3.jpg"
+                        class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full rounded-lg" alt="">
+                </div>
+                <!-- content -->
+                <div class="flex flex-1 flex-col items-center lg:items-start">
+                    <h1 class="text-3xl text-bookmark-blue">Lorem Ipsum</h1>
+                    <p class="text-center text-bookmark-gray my-4 lg:text-left sm:w-3/4 lg:w-full"> Lorem ipsum dolor
+                        sit amet consectetur adipisicing
+                        elit.
+                        Placeat velit amet fugiat incidunt sed autem. Ab molestiae officia, natus facere quo provident
+                        dolorem
+                        officiis sequi. Asperiores aliquam voluptas itaque temporibus?</p>
+                    <button class="btn btn-purple hover:bg-bookmark-white hover:text-black">More Info</button>
+                </div>
+            </div>
+            <div
+                class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-r-full absolute h-80 w-2/4 top-32 left-0 lg:-bottom-28 lg:-right-36">
+            </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="relative mt-20 lg:mt-52">
+            <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
+                <!-- Image -->
+                <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+                    <img src="../assets/img/img8.jpg" class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" alt="">
+                </div>
+                <!-- content -->
+                <div class="flex flex-1 flex-col items-center lg:items-start">
+                    <h1 class="text-3xl text-bookmark-blue">Lorem Ipsum</h1>
+                    <p class="text-center text-bookmark-gray my-4 lg:text-left sm:w-3/4 lg:w-full"> Lorem ipsum dolor
+                        sit amet consectetur adipisicing
+                        elit.
+                        Placeat velit amet fugiat incidunt sed autem. Ab molestiae officia, natus facere quo provident
+                        dolorem
+                        officiis sequi. Asperiores aliquam voluptas itaque temporibus?</p>
+                    <button class="btn btn-purple hover:bg-bookmark-white hover:text-black">More Info</button>
+                </div>
+            </div>
+            <div
+                class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/4 top-32 right-0 lg:-bottom-28 lg:-right-0">
+            </div>
+        </div>
+    </section>
+    <script>
+        document.getElementById('toggle').addEventListener('change', function () {
+            if (this.checked) {
+                document.documentElement.classList.add('dark')
+            } else {
+                document.documentElement.classList.remove('dark')
+            }
+        })
+    </script>
+</body>
+
+</html>

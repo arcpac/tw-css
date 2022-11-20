@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* @config "./tailwind.config.js"; */
 @layer components {
   .btn-default {
     @apply 
