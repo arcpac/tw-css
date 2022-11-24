@@ -1,105 +1,195 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en" class="">
+
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+  <style>
+    .toggle-checkbox:checked {
+      right: 0;
+      border-color: #68d391;
+    }
 
+    .toggle-checkbox:checked+.toggle-label {
+      background-color: #68d391;
+    }
+  </style>
 </head>
-<body>
+
+<body class="font-Poppins dark:bg-slate-900">
   <header>
-  </header>
-  <main>
-    <nav class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full top-0 left-0 border-b border-gray-200 dark:border-gray-600">
-      <div class="container flex flex-wrap justify-between items-center mx-auto">
-        <a href="https://flowbite.com/" class="flex items-center">
-          <img src="../assets/img/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo">
-          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Hello Order</span>
-        </a>
-
-        <div class="flex md:order-2 gap-4">
-          <a class="btn-primary">Sign In</a>
-          <a class="btn-default">Sign Up</a>
-          <a class="btn-primary">Sign out</a>
+    <nav class="container flex items-start py-4 mt-4 sm:mt-12 ">
+      <div class="py-1"><img src="../assets/img/logo.svg" alt=""></div>
+      <ul
+        class="hidden sm:flex flex-1 text-bookmark-blue justify-end items-center gap-12 uppercase text-xs dark:text-white">
+        <li class="cursor-pointer">Features</li>
+        <li class="cursor-pointer">Pricing</li>
+        <li class="cursor-pointer">Contact</li>
+        <button type="button" class="bg-bookmark-red text-white rounded-md px-7 py-3">Login</button>
+        <div
+          class="relative inline-block w-10 mr-2 ml-6 align-middle select-none transition duration-200 ease-in  items-center">
+          <input type="checkbox" name="toggle" id="toggle"
+            class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" />
+          <label for="toggle"
+            class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
         </div>
 
-        <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-          <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
-              <a href="#" class="active" aria-current="page">Home</a>
-            </li>
-            <li>
-              <a href="#" class="link">About</a>
-            </li>
-            <li>
-              <a href="#" class="link">Products</a>
-            </li>
-            <li>
-              <a href="#" class="link">Services</a>
-            </li>
-            <li>
-              <a href="#" class="link">Contact</a>
-            </li>
-          </ul>
-        </div>
+      </ul>
+      <div class="flex sm:hidden flex-1 justify-end">
+        <i class="text-2xl fas fa-bars"></i>
       </div>
     </nav>
-    
+    </div>
+  </header>
 
-    <div class="container mx-auto py-20">
-
-      <section class="overflow-hidden text-gray-700 ">
-        <div class="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
-          <div class="flex flex-wrap -m-1 md:-m-2">
-            <div class="flex flex-wrap w-1/3">
-              <div class="w-full p-1 md:p-2">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp">
-              </div>
-            </div>
-            <div class="flex flex-wrap w-1/3">
-              <div class="w-full p-1 md:p-2">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp">
-              </div>
-            </div>
-            <div class="flex flex-wrap w-1/3">
-              <div class="w-full p-1 md:p-2">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp">
-              </div>
-            </div>
-            <div class="flex flex-wrap w-1/3">
-              <div class="w-full p-1 md:p-2">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp">
-              </div>
-            </div>
-            <div class="flex flex-wrap w-1/3">
-              <div class="w-full p-1 md:p-2">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp">
-              </div>
-            </div>
-            <div class="flex flex-wrap w-1/3">
-              <div class="w-full p-1 md:p-2">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp">
-              </div>
-            </div>
-          </div>
+  <!-- Hero -->
+  <section class="relative">
+    <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
+      <!-- Content -->
+      <div class="flex flex-1 flex-col items-center lg:items-start">
+        <h2 class="text-bookmark-blue text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6 dark:text-white">
+          Lorem Ipsum
+          Dolor</h2>
+        <p class="text-bookmark-gray text-lg text-center lg:text-left mb-6">Lorem ipsum dolor sit amet
+          consectetur adipisicing elier adipisicing elier adipisicing elier adipisicing elier adipisicing elie
+        </p>
+        <div class="flex justify-center flex-wrap gap-6">
+          <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black">Shop
+            now</button>
+          <button type="button" class="btn btn-white hover:bg-bookmark-purple hover:text-white">Register</button>
         </div>
-      </section>
-      <div class="columns-2 space-y-4">
-        <img class="w-full" src="../assets/img/img1.jpg" />
-        <img class="w-full" src="../assets/img/img2.jpg" />
-        <img class="w-full" src="../assets/img/img3.jpg" />
-        <img class="w-full" src="../assets/img/img4.jpg" />
+      </div>
+      <!-- Image -->
+      <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
+        <img src="../assets/img/img6.jpg" class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full rounded-lg" alt="">
+      </div>
+    </div>
+    <div
+      class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/4 top-32 right-0 lg:-bottom-28 lg:-right-0">
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="bg-bookmark-white py-20 mt-20 lg:mt-60">
+    <!-- heading -->
+    <div class="sm:w-3/4 lg:w-5/12 mx-auto py-2">
+      <h1 class="text-3xl text-bookmark-blue text-center">Features</h1>
+      <p class="text-center text-bookmark-gray mt-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Placeat velit amet fugiat incidunt sed autem. Ab molestiae officia, natus facere quo provident dolorem
+        officiis sequi. Asperiores aliquam voluptas itaque temporibus?</p>
+    </div>
+    <!-- Feature 1 -->
+    <div class="relative mt-20 lg:mt-24">
+      <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+        <!-- Image -->
+        <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+          <img src="../assets/img/img3.jpg" class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full rounded-lg" alt="">
+        </div>
+        <!-- content -->
+        <div class="flex flex-1 flex-col items-center lg:items-start">
+          <h1 class="text-3xl text-bookmark-blue">Lorem Ipsum</h1>
+          <p class="text-center text-bookmark-gray my-4 lg:text-left sm:w-3/4 lg:w-full"> Lorem ipsum dolor
+            sit amet consectetur adipisicing
+            elit.
+            Placeat velit amet fugiat incidunt sed autem. Ab molestiae officia, natus facere quo provident
+            dolorem
+            officiis sequi. Asperiores aliquam voluptas itaque temporibus?</p>
+          <button class="btn btn-purple hover:bg-bookmark-white hover:text-black">More Info</button>
+        </div>
+      </div>
+      <div
+        class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-r-full absolute h-80 w-2/4 top-32 left-0 lg:-bottom-28 lg:-right-36">
       </div>
     </div>
 
-  </main>
+    <!-- Feature 2 -->
+    <div class="relative mt-20 lg:mt-52">
+      <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
+        <!-- Image -->
+        <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+          <img src="../assets/img/img8.jpg" class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" alt="">
+        </div>
+        <!-- content -->
+        <div class="flex flex-1 flex-col items-center lg:items-start">
+          <h1 class="text-3xl text-bookmark-blue">Lorem Ipsum</h1>
+          <p class="text-center text-bookmark-gray my-4 lg:text-left sm:w-3/4 lg:w-full"> Lorem ipsum dolor
+            sit amet consectetur adipisicing
+            elit.
+            Placeat velit amet fugiat incidunt sed autem. Ab molestiae officia, natus facere quo provident
+            dolorem
+            officiis sequi. Asperiores aliquam voluptas itaque temporibus?</p>
+          <button class="btn btn-purple hover:bg-bookmark-white hover:text-black">More Info</button>
+        </div>
+      </div>
+      <div
+        class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/4 top-32 right-0 lg:-bottom-28 lg:-right-0">
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards -->
+  <section class="py-20 mt-20">
+    <!-- heading -->
+    <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+      <h1 class="text-3xl text-bookmark-blue text-center">Downloads</h1>
+      <p class="text-center text-bookmark-gray mt-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Placeat velit amet fugiat incidunt sed autem. Ab molestiae officia, natus facere quo provident dolorem
+        officiis sequi. Asperiores aliquam voluptas itaque temporibus?</p>
+    </div>
+
+    <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg mt-16">
+      <!-- card 1 -->
+      <div class="flex flex-col rounded-md shadow-md">
+        <div class="p-6 flex flex-col items-center">
+          <img src="../assets/img/img1.jpg" class="" alt="">
+          <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Chrome</h3>
+          <p class="mb-2 text-bookmark-gray font-light">Version </p>
+        </div>
+        <hr class="border-b border-bookmark-white" />
+        <div class="flex p-6">
+          <button class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black">Add </button>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div class="flex flex-col rounded-md shadow-md">
+        <div class="p-6 flex flex-col items-center">
+          <img src="../assets/img/img2.jpg" class="" alt="">
+          <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Chrome</h3>
+          <p class="mb-2 text-bookmark-gray font-light">Version </p>
+        </div>
+        <hr class="border-b border-bookmark-white" />
+        <div class="flex p-6">
+          <button class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black">Add </button>
+        </div>
+      </div>
+      <!-- card 1 -->
+      <div class="flex flex-col rounded-md shadow-md">
+        <div class="p-6 flex flex-col items-center">
+          <img src="../assets/img/img4.jpg" class="" alt="">
+          <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Chrome</h3>
+          <p class="mb-2 text-bookmark-gray font-light">Version </p>
+        </div>
+        <hr class="border-b border-bookmark-white" />
+        <div class="flex p-6">
+          <button class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black">Add </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('toggle').addEventListener('change', function () {
+      if (this.checked) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    })
+  </script>
 </body>
 
 </html>
