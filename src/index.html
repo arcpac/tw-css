@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Document</title>
   <style>
     .toggle-checkbox:checked {
@@ -22,7 +23,7 @@
 <body class="font-Poppins dark:bg-slate-900">
   <header>
     <nav class="container flex items-start py-4 mt-4 sm:mt-12 ">
-      <div class="py-1"><img src="../assets/img/logo.svg" alt=""></div>
+      <div class="py-1 "><img src="../assets/img/logo.svg" alt=""></div>
       <ul
         class="hidden sm:flex flex-1 text-bookmark-blue justify-end items-center gap-12 uppercase text-xs dark:text-white">
         <li class="cursor-pointer">Features</li>
@@ -30,7 +31,7 @@
         <li class="cursor-pointer">Contact</li>
         <button type="button" class="bg-bookmark-red text-white rounded-md px-7 py-3">Login</button>
         <div
-          class="relative inline-block w-10 mr-2 ml-6 align-middle select-none transition duration-200 ease-in  items-center">
+          class="relative inline-block w-10 mr-2 ml-6 align-middle select-none transition duration-200 ease-in items-center">
           <input type="checkbox" name="toggle" id="toggle"
             class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" />
           <label for="toggle"
@@ -38,8 +39,15 @@
         </div>
 
       </ul>
-      <div class="flex sm:hidden flex-1 justify-end">
+      <div class="flex flex-1 sm:hidden justify-end text-black dark:text-white">
         <i class="text-2xl fas fa-bars"></i>
+        <div
+        class="relative inline-block w-10 mr-2 ml-6 align-middle select-none transition duration-200 ease-in items-center">
+        <input type="checkbox" name="toggle" id="toggle"
+          class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" />
+        <label for="toggle"
+          class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+      </div>
       </div>
     </nav>
     </div>
@@ -181,6 +189,9 @@
     </div>
   </section>
 
+  <section class="bg-bookmark-white py-20">
+    test
+  </section>
   <script>
     document.getElementById('toggle').addEventListener('change', function () {
       if (this.checked) {
